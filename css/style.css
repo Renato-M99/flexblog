@@ -1,7 +1,101 @@
-*{
-    font-family: 'Nunito Sans', sans-serif;
+:root{
+    /* :root equivale a toda estrutura do elemento HTML, é parecida com a tag html com a diferença que a espefificade (prioridade) do :root é maior */
+    --Background-blue-Dark: #122ab2;
+    --Background-blue-Bright: #2c70ff;
+    --Background-Gray-Soft: #f7f7f7;
+    --Row-purple: #ae81ff;
+    --Row-Pink: #f9265e;
+    --Row-blue: #66d9eb;
+    --Color-gray-Soft: #a4a4a4;
+    --Color-gray-Strong: #7c7c7c;
+    --Color-Black-bright:#222222;
+    /* para facilitar o uso das formatações, é possível usar váriaveis (espaços na memória) para dar um "apelido" à propriedade, deixando mais fácil invocar tal formatação. */
+    /* --nomeDaVariável: propriedade */
 }
 
-:root{
+
+
+*{
+    font-family: 'Nunito Sans', sans-serif;
+    /* Gerais - Resets */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.superinfo-bg{
+    background-color: var(--Background-blue-Dark);
+    color: #fff;
+}
+.superinfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px 0;
+
+}
+
+.superinfo a{
+    color: #fff;
+    text-decoration:none;
+}
+
+.menu-bg{
+    background-color: var(--Background-blue-Bright);
+}
+
+.menu{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    align-items: center;
+}
+
+.menu a{
+    color:#fff;
+    text-decoration: none;
     
 }
+.menu-logo a{
+    font-size: 2.25em;
+    font-weight: bold;
+}
+
+.menu-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    
+}
+
+.menu-nav a{
+    font-size: 1.25em;
+    padding: 10px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.menu-nav a:hover{
+    color: var(--Background-blue-Dark);
+}
+
+.intro{
+    text-align: center;
+}
+
+.sobre{
+    border: 2px solid red;
+    text-align: center;
+}
+
+
+
+
+
+
+

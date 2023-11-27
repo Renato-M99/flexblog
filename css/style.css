@@ -302,6 +302,8 @@
     padding: 60px 140px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+
 }
 .newsletter-info{
     min-width: 200px;
@@ -326,8 +328,9 @@
     min-width: 160px;
     width: 300px;
     margin: 0 10px;
+    display: flex;
     align-self: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .newsletter input{
@@ -344,6 +347,31 @@
     border-radius: 0px;
 }
 
-.newsletter button{
+.newsletter-form button{
+    min-width: 260px;
+    width: 260px;
+    font-family: 'Nunito', Helvetica, Arial, Helvetica, sans-serif;
+    font-size: 2.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: var(--Background-blue-Bright);
+    color: white;
+    margin: 0px;
+    border: none;
+    padding: 10px 15px;
     
+}
+
+.footer{
+    display: flex;
+    background: var(--Background-blue-Bright);
+    align-items: center;
+    height: 200px;
+}
+
+footer p{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.25em;
+    color: white;
 }
